@@ -29,9 +29,9 @@ int SumNaturalNumberUp(int a, int b)
     return sum;
 }
 
-int SumNaturalNumberDown(int m, int n)
+int SumNaturalNumberDown(int a, int b)
 {
-    if (n == (m - 1)) return 0;
-    int sum = SumNaturalNumberDown(m, n - 1) + n;
+    if (b == (a - 1)) return 0;
+    int sum = SumNaturalNumberDown(a, b - 1) + b;
     return sum;
 }
